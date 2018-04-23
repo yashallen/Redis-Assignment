@@ -16,3 +16,6 @@ jobs:
       - run:
           command: |
             apt-get install git -y
+      - run:
+          command: |
+            nvm ls
