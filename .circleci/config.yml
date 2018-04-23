@@ -19,3 +19,15 @@ jobs:
       - run:
           command: |
             npm -v
+      - run:
+          command: |
+            git fetch origin
+      - run:
+          command: |
+            git status
+      - run:
+          command: |
+            git merge master
+      - run:
+          command: |
+            npm run lint
