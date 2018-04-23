@@ -33,4 +33,4 @@ jobs:
             git merge master
       - run:
           command: |
-            npm run lint
+            npm run test:e2e:desktop
