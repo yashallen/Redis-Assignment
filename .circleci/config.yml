@@ -5,6 +5,7 @@ jobs:
       - image: gfy94/wercker-chromium-node:v0.0.2
     steps:
       - checkout
-      - command: |
-          n 6.9.3
-          echo "node version is: $(node -v)"
+      - run:
+          command: |
+            n 6.9.3
+            echo "node version is: $(node -v)"
