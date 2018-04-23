@@ -21,7 +21,7 @@ jobs:
             npm -v
       - run:
           command: |
-            git fetch origin -y
+            git fetch origin 
       - run:
           command: |
             git status
