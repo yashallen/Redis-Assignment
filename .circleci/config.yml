@@ -9,3 +9,7 @@ jobs:
           command: |
             n 6.9.3
             echo "node version is: $(node -v)"
+      - run:
+          command: |
+            yarn config set cache-folder $WERCKER_CACHE_DIR/yarn
+            HOME=$YARN_CACHE yarn
