@@ -1,0 +1,21 @@
+# Don't check auto-generated stuff into git
+coverage
+build
+node_modules
+stats.json
+newrelic_agent.log
+myapp-error.log
+screenshots
+
+# Cruft
+.DS_Store
+npm-debug.log
+.idea
+server/services/analytics/analytics.log
+.cache-require-paths.json
+npm-debug.log.*
+server/services/analytics/analytics.log.*
+*.log
+reports
+tags
+.vscode
