@@ -39,7 +39,7 @@ module.exports = {
         acceptSslCerts: true,
         browserName: 'chrome',
         chromeOptions: {
-          args: ['no-sandbox', 'disable-gpu', 'window-size=1100,800'],
+          args: ['headless', 'no-sandbox', 'disable-gpu', 'window-size=1100,800'],
         },
       },
     },
