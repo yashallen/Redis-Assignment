@@ -13,3 +13,6 @@ jobs:
           command: |
             yarn config set cache-folder $WERCKER_CACHE_DIR/yarn
             HOME=$YARN_CACHE yarn
+      - run:
+          command: |
+            apt-get install git -y
