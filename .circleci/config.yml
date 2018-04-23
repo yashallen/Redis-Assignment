@@ -19,6 +19,9 @@ jobs:
       - run:
           command: |
             npm -v
+      - run: 
+          name: Avoid hosts unknown for github
+          command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           command: |
             git fetch origin 
